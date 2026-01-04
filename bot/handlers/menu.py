@@ -9,7 +9,7 @@ def register_menu_handlers(dp):
 
 
 # 🎮 Советы по PUBG
-@router.message(Text("🎮 Советы по PUBG"))
+@router.message(F.text == "🎮 Советы по PUBG")
 async def open_advice(message: types.Message):
     await message.answer(
         "🧠 Раздел: <b>Советы по PUBG</b>\n\n"
@@ -24,7 +24,7 @@ async def open_advice(message: types.Message):
 
 
 # 🔫 Подбор оружия
-@router.message(Text("🔫 Подбор оружия"))
+@router.message(F.text == "🔫 Подбор оружия")
 async def open_weapons(message: types.Message):
     await message.answer(
         "🔫 Раздел: <b>Подбор оружия</b>\n\n"
@@ -38,7 +38,7 @@ async def open_weapons(message: types.Message):
 
 
 # 🗺 Тактики по картам
-@router.message(Text("🗺 Тактики по картам"))
+@router.message(F.text == "🗺 Тактики по картам")
 async def open_maps(message: types.Message):
     await message.answer(
         "🗺 Раздел: <b>Тактики по картам</b>\n\n"
@@ -52,7 +52,7 @@ async def open_maps(message: types.Message):
 
 
 # 🤖 ИИ-чат
-@router.message(Text("🤖 ИИ-чат"))
+@router.message(F.text == "🤖 ИИ-чат")
 async def open_ai(message: types.Message):
     await message.answer(
         "🤖 <b>ИИ-чат</b>\n\n"
@@ -62,7 +62,7 @@ async def open_ai(message: types.Message):
 
 
 # 👥 Поиск тиммейтов
-@router.message(Text("👥 Поиск тиммейтов"))
+@router.message(F.text == "👥 Поиск тиммейтов")
 async def open_matchmaking(message: types.Message):
     await message.answer(
         "👥 <b>Поиск тиммейтов</b>\n\n"
@@ -72,7 +72,7 @@ async def open_matchmaking(message: types.Message):
 
 
 # 🎭 Генератор никнеймов
-@router.message(Text("🎭 Генератор никнеймов"))
+@router.message(F.text == "🎭 Генератор никнеймов")
 async def open_nicknames(message: types.Message):
     await message.answer(
         "🎭 <b>Генератор никнеймов</b>\n\n"
