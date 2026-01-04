@@ -1,2 +1,3 @@
-from .main_menu import main_menu
+from .main_menu import main_menu_keyboard
+
 from .matchmaking_menu import matchmaking_keyboard
