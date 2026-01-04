@@ -12,11 +12,8 @@ def register_start_handlers(dp):
 
 @router.message(CommandStart())
 async def start_command(message: types.Message):
-    text = (
-        "Привет! Я <b>PUBG Copilot</b> — твой умный игровой ассистент.\n\n"
-        "Помогу подобрать оружие, объясню тактики, разберу стиль игры и найду идеального тиммейта.\n"
-        "Готов начать?"
+    await message.answer(
+        "Привет! Я <b>PUBG Copilot</b> — твой игровой ассистент по PUBG.\n\n"
+        "Используй меню ниже, чтобы выбрать раздел.",
+        reply_markup=main_menu_keyboard(),
     )
-
-    await message.answer(text, reply_markup=main_menu_keyboard())
-
