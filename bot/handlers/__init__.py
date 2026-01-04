@@ -6,4 +6,14 @@ from .maps import register_map_handlers
 from .ai_chat import register_ai_handlers
 from .matchmaking import register_matchmaking_handlers
 from .nicknames import register_nickname_handlers
-from .titles import register_titles_handlers
+
+__all__ = [
+    "register_start_handlers",
+    "register_menu_handlers",
+    "register_advice_handlers",
+    "register_weapon_handlers",
+    "register_map_handlers",
+    "register_ai_handlers",
+    "register_matchmaking_handlers",
+    "register_nickname_handlers",
+]
