@@ -1,4 +1,13 @@
+# Environment
 .env
 *.env
-database.db
+
+# Python cache
 __pycache__/
+*.pyc
+
+# Database
+database.db
+
+# OS files
+.DS_Store
