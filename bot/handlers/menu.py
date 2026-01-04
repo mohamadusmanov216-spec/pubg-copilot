@@ -1,5 +1,5 @@
 from aiogram import Router, types
-from aiogram.filters import Text
+from aiogram import F
 
 router = Router()
 
